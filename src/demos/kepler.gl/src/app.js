@@ -26,8 +26,8 @@ import KeplerGl from 'kepler.gl';
 import {addDataToMap} from 'kepler.gl/actions';
 // Kepler.gl Data processing APIs
 import Processors from 'kepler.gl/processors';
-import munichTrips from './data/tracks_munich_2018-09-16 00:00:08-2018-09-21 23:59:58.csv';
-import myConfig from './data/my-config.json';
+import munichTrips from '../../../../data/tracks_munich_2018-09-16 00:00:08-2018-09-21 23:59:58.csv';
+import myConfig from '../../../../data/my-config.json';
 
 // Kepler.gl Schema APIs
 import KeplerGlSchema from 'kepler.gl/schemas';
@@ -42,6 +42,7 @@ class App extends Component {
             info: {
                 // `info` property are optional, adding an `id` associate with this dataset makes it easier
                 // to replace it later
+                label : 'MUC data',
                 id: 'MUC'
             }
         };
