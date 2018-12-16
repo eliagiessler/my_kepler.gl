@@ -1,14 +1,15 @@
 {
-  "name": "myvis-academy",
+  "name": "tum-ftm",
   "description": "A set of Uber Visualization tutorials",
   "repository": {
     "type": "git",
-    "url": "https://github.com/uber-common/vis-academy.git"
+    "url": "https://github.com/eliagiessler/my_kepler.gl.git"
   },
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm run install-and-start -- rc/demos/kepler.gl start-local",
+    "start": "npm run install-and-start -- src/demos/kepler.gl start-local",
+    "install-and-start": "node ./scripts/install-and-start",
     "clean": "rm -rf node_modules src/demos/kepler.gl/node_modules",
     "build": "ocular build",
     "lint": "ocular lint",
