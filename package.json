@@ -1,5 +1,5 @@
 {
-  "name": "vis-academy",
+  "name": "myvis-academy",
   "description": "A set of Uber Visualization tutorials",
   "repository": {
     "type": "git",
@@ -8,8 +8,8 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "start": "ocular start",
-    "clean": "rm -rf docs/*{.js,.css,index.html,appcache,fonts,images}",
+    "start": "npm run install-and-start -- rc/demos/kepler.gl start-local",
+    "clean": "rm -rf node_modules src/demos/kepler.gl/node_modules",
     "build": "ocular build",
     "lint": "ocular lint",
     "publish-docs": "npm run clean && npm run build && mv dist/* docs"
